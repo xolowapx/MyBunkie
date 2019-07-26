@@ -104,7 +104,7 @@ body{
 
  
 .header{
- background: linear-gradient(360deg, rgba(11, 30, 83, 0.349), rgba(11, 11, 66, 0.335)), url('/bed-bedroom-hostel-4217.jpg');
+ background: linear-gradient(360deg, rgba(11, 30, 83, 0.349), rgba(11, 11, 66, 0.335)), url('../bed-bedroom-hostel-4217.jpg');
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
