@@ -1,0 +1,540 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+ line-height: 1rem;
+ overflow-x: hidden;
+ width:100%;
+}
+
+.logo{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: #fff;
+ padding: 1rem;
+ 
+}
+.yellow
+{
+  color: rgb(255, 81, 0);
+  size: 20px;
+}
+.yellow .material-icons
+{
+  font-size: 40px;
+}
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 10px;
+  display: none;
+  left: -30px;
+  background-color: rgba(0, 0, 0, 0.712);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  padding-bottom: 4rem;
+  transition: 2s all ease-in-out; /* 0.5 second transition effect to slide in the sidebar */
+  
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #ddd;
+  display: block;
+   transition: 0.3s all ease-in;
+  
+   margin: 2.5rem 0rem 2.5rem 0rem;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidebar {
+  position: absolute;
+  top:-30px;
+  right: 20px;
+  font-size: 3rem;
+  margin-left: 30px;
+  border: none;
+}
+
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.links{
+  padding: 1rem;
+}
+
+.links a
+{
+  text-decoration: none;
+  color: #fff;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.primary-btn
+{
+ color: #fff;
+ padding: 0.6rem;
+ border: 1px solid royalblue;
+ width: 50px;
+}
+.secondary-btn
+{
+ background: gold;
+ padding: 0.5rem;
+ color: royalblue;
+}
+
+ 
+.header{
+ background: linear-gradient(360deg, rgba(11, 30, 83, 0.349), rgba(11, 11, 66, 0.335)), url('/bed-bedroom-hostel-4217.jpg');
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ height: 100vh;
+ 
+}
+
+.sidebar .primary-btn , .sidebar .secondary-btn
+{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sidebar .secondary-btn
+{
+  background: rgb(255, 94, 0);
+  font-size: 0.9rem;
+}
+
+
+/*  menubar*/
+.contain {
+ display: none;
+ cursor: pointer;
+ margin: 1rem;
+}
+
+.bar1, .bar2, .bar3 {
+ width: 30px;
+ height: 5px;
+ background-color: rgb(255, 255, 255);
+ margin: 6px 7px;
+ transition: 0.4s;
+ font-size: 1rem;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+ -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+ transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+ opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+ -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+ transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.showcase 
+{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  font-size: 30px;
+  padding: 2.5rem;
+  display:flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+.showcase h3
+{
+  font-size: 40px;
+  color: #fff;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-weight: bold;
+
+}
+.showcase p 
+{
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: lighter;
+  margin-top: -5%;
+}
+
+.showcase a 
+{
+  text-decoration: none;
+  width: 300px;
+  margin-left: 3%;
+  margin-top: -1%;
+  left: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 5px;
+  background: rgb(245, 111, 1);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.showcase a:hover
+{
+  background: orangered;
+}
+
+main
+{
+  background: #fff;
+  padding: 0rem;
+}
+
+.small-img
+{
+  width: 100%;
+  box-shadow: 0 0 6px black;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.img-caption
+{
+  padding: 1.6rem;
+  width: 30%;
+  font-size: 2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img-caption h4
+{
+  font-weight: lighter;
+}
+
+.student
+{
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+ border-top-left-radius: 3px;
+
+}
+.img
+{
+  padding: 3rem;
+  width: 60%;
+}
+.how-it-works
+{
+  background: rgb(1, 1, 47);
+  color: #fff;
+  padding: 4rem;
+  width: 100%;
+}
+
+.how-it-works h3
+{
+  text-align: center;
+  font-family: 'Grotesque';
+  font-size: 50px;
+  font-family: bolder;
+}
+
+.details
+{
+  display: flex;
+  flex-direction: row;
+  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.details .icons-1
+{
+  width: 20%;
+  padding: 2rem;
+
+}
+
+.icons-1 
+{
+  font-size: 20px;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icons-1 p 
+{
+  font-weight: lighter;
+  padding: 1.8rem;
+  margin: 0.8rem;
+  line-height: 1.7rem;
+}
+
+.icons-1 .material-icons
+{
+  font-size: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.roomate
+{
+  width: 100%;
+  background: rgb(255, 81, 0);
+
+}
+.roomate h4
+{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  padding: 1rem;
+}
+.saerch
+{
+  display: flex;
+  flex-direction: row;
+}
+.search-caption
+{
+  width: 50%;
+  padding: 2.5rem;
+  font-size: 20px;
+  line-height: 5rem;
+}
+.search-img
+{
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.search-img .material-icons
+{
+  font-size: 300px;
+}
+
+@media (max-width:760px)
+{
+  .contain
+  {
+    display: inline-block;
+  }
+
+  .links
+  {
+    display: none;
+  }
+
+  .open 
+  {
+    display: block;
+    width: 80%;
+  }
+
+  .add-margin
+  {
+    margin-left: 30px;
+  }
+
+  .showcase
+  {
+    position: fixed;
+    transform: translate(0%, -40%);
+    top:-20%;
+    left:0;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    padding: 1.4rem;
+    margin-top: -3rem;
+    margin: 0 auto;
+  }
+  .showcase h3
+{
+  width: 100%;
+  font-size: calc(4rem - 20px);
+  color: #fff;
+  padding: 0;
+  margin:0;
+  font-weight: bolder;
+  line-height: 1.6rem;
+
+}
+.showcase p
+{
+  width: 100%;
+  line-height: 1.8rem;
+  margin:0;
+  padding: 0;
+}
+.showcase a
+{
+  display:flex;
+  
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.student
+{
+  flex-direction: column
+}
+
+.img, .img-caption
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-caption h4
+{
+  font-size: 20px;
+  text-align: left;
+}
+
+.img
+{
+  padding: 1rem;
+}
+
+.small-img
+{
+  margin: 20% auto;
+  width: 500px;
+}
+
+.details
+{
+  flex-direction: column;
+}
+
+.details .icons-1
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+@media (max-width: 500px)
+{
+
+  .header
+  {
+    width: 100%;
+    height:100%;
+  }
+  .open 
+  {
+    display: block;
+    width: 80%;
+    transition: 2s all ease-in;
+  }
+
+  .add-margin
+  {
+    margin-left: 20px;
+    transition: 2s all ease-in-out;
+  }
+
+  .showcase
+  {
+    position: relative;
+    top: 60%;
+    margin-top: 70%;
+    padding: 1.8rem;
+    width: 300px;
+  }
+  .showcase h3
+  {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  }
+  .showcase p
+  {
+    font-size: 1rem;
+  }
+  .showcase a
+  {
+    width: 200px;
+  }
+  .img
+  {
+    width: 100%;
+  }
+
+  .small-img
+  {
+    width: 200px;
+    margin-left: 10%;
+  }
+
+  .saerch
+  {
+    flex-direction: column;
+  }
+
+  .saerch *
+  {
+    width: 100%;
+    color: rgb(1, 1, 47);
+  }
+  .search-img
+  {
+    display: none;
+  }
+  
+}
+@media (max-width: 360px)
+  {
+    .small-img
+    {
+      margin-left: 10%;
+    }
+    .sub-title p 
+    {
+      padding-left: 0.4rem;
+    }
+  }
